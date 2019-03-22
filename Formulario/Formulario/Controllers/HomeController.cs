@@ -25,11 +25,11 @@ namespace Formulario.Controllers
 
             if(nome != "") { 
             // preparar a resposta a enviar para a View.
-            string resposta = "Você chama-se " + nome + " e tem " + idade + " anos.";}
+            resposta += "Voce chama-se " + nome;}
 
             if(idade != null) {
                 //ver o final no git
-
+                resposta += " e tem " + idade + " anos.";
             }
 
             ViewBag.Resposta = resposta;
