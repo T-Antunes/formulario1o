@@ -27,8 +27,7 @@ namespace Formulario.Controllers
             // preparar a resposta a enviar para a View.
             resposta += "Voce chama-se " + nome;}
 
-            if(idade != null) {
-                //ver o final no git
+            if(idade != null && idade>=0 && idade<=120) {
                 resposta += " e tem " + idade + " anos.";
             }
 
